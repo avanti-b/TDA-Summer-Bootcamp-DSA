@@ -1,0 +1,160 @@
+<!-- Full updated code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avantika Bhattacharya - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-gradient-to-tr from-pink-100 via-yellow-100 to-blue-100 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-pink-400 to-purple-500 shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-4">
+      <h1 class="text-xl md:text-2xl font-bold text-white">Avantika Bhattacharya</h1>
+      <ul class="hidden md:flex space-x-6 md:space-x-8 text-white font-semibold text-sm md:text-base">
+        <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+        <li><a href="#projects" class="hover:text-yellow-300">Projects</a></li>
+        <li><a href="#skills" class="hover:text-yellow-300">Skills</a></li>
+        <li><a href="#hobbies" class="hover:text-yellow-300">Hobbies</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-tr from-purple-100 to-pink-100">
+    <img src="images/profile2.jpg" alt="Avantika Bhattacharya" class="w-40 h-40 md:w-60 md:h-60 rounded-full border-8 border-purple-400 shadow-xl mb-6 transition-transform hover:scale-110">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-purple-700">Hello, I'm Avantika 👋</h2>
+    <p class="max-w-xl md:max-w-2xl text-lg md:text-2xl text-gray-700">Curious mind passionate about data science, problem solving & creative technology.</p>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="min-h-screen flex items-center justify-center px-4 py-12 bg-white">
+    <div class="max-w-6xl w-full flex flex-col md:flex-row items-center md:space-x-10">
+      <div class="flex-1 mb-10 md:mb-0">
+        <img src="images/profile2.jpg" alt="Avantika" class="w-64 h-64 object-cover rounded-3xl shadow-xl mx-auto md:mx-0">
+      </div>
+      <div class="flex-1 space-y-6 text-center md:text-left">
+        <h2 class="text-4xl md:text-5xl font-bold text-purple-700">About Me</h2>
+        <p class="text-lg md:text-2xl text-gray-700 leading-relaxed">
+          👩‍💻 I’m <span class="font-semibold text-purple-600">Avantika</span>, born & raised in the city of joy, <span class="font-semibold text-pink-600">Kolkata 🇮🇳</span>, currently pursuing <b>Data Science & Engineering</b> at <span class="font-semibold text-blue-600">MIT Manipal</span>.
+        </p>
+        <p class="text-lg md:text-2xl text-gray-700 leading-relaxed">
+          💡 I’m deeply passionate about <span class="font-semibold text-purple-600">machine learning</span>, <span class="font-semibold text-yellow-600">data visualization</span>, and solving meaningful real-world problems 🌍.
+        </p>
+        <p class="text-lg md:text-2xl text-gray-700 leading-relaxed">
+          🎨 I’m equally curious about <span class="italic">philosophy, design, and human psychology</span> — and I love falling into <span class="font-semibold text-pink-500">Wikipedia rabbit holes</span> late at night.
+        </p>
+        <p class="text-lg md:text-2xl text-gray-700 leading-relaxed">
+          🚀 I believe in <span class="font-semibold text-green-600">collaboration, empathy</span>, and building beautiful things together.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="min-h-screen flex items-center justify-center bg-gradient-to-tr from-pink-100 via-yellow-50 to-purple-100 px-4 py-12">
+    <div class="max-w-6xl w-full">
+      <h2 class="text-4xl md:text-5xl font-bold text-purple-700 mb-12 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Repeat structure for each project -->
+        <div class="bg-white p-8 rounded-3xl shadow-2xl text-lg md:text-xl flex flex-col justify-between">
+          <div>📈 <strong>Stock Trend Analysis & Prediction:</strong><br> Time series models with data visualization.</div>
+          <button class="mt-6 py-2 px-6 rounded-full bg-gradient-to-r from-pink-400 to-purple-500 text-white font-semibold hover:scale-105 transition">Know More</button>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-2xl text-lg md:text-xl flex flex-col justify-between">
+          <div>🔌 <strong>Energy Conservation with Arduino:</strong><br> IoT system for real-time energy monitoring.</div>
+          <button class="mt-6 py-2 px-6 rounded-full bg-gradient-to-r from-pink-400 to-purple-500 text-white font-semibold hover:scale-105 transition">Know More</button>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-2xl text-lg md:text-xl flex flex-col justify-between">
+          <div>💼 <strong>Personal Portfolio Website:</strong><br> Fully responsive portfolio showcasing projects.</div>
+          <button class="mt-6 py-2 px-6 rounded-full bg-gradient-to-r from-pink-400 to-purple-500 text-white font-semibold hover:scale-105 transition">Know More</button>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-2xl text-lg md:text-xl flex flex-col justify-between">
+          <div>❌⭕ <strong>X and O Game (Tic-Tac-Toe):</strong><br> Interactive game with clean UI and logic.</div>
+          <button class="mt-6 py-2 px-6 rounded-full bg-gradient-to-r from-pink-400 to-purple-500 text-white font-semibold hover:scale-105 transition">Know More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="min-h-screen flex items-center justify-center bg-purple-50 px-4 py-12">
+    <div class="max-w-6xl w-full">
+      <h2 class="text-4xl md:text-5xl font-bold text-purple-700 mb-14 text-center">Skills & Tools I Want to Learn</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- Skill Cards -->
+        <div class="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-purple-400 to-purple-600 text-white text-center shadow-xl hover:scale-105 transition">
+          <h3 class="text-2xl md:text-3xl font-semibold mb-4">NLP Basics</h3>
+          <p class="text-lg md:text-xl">Proficiency: <strong>High</strong></p>
+        </div>
+        <!-- Repeat for each skill -->
+        <div class="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-pink-400 to-pink-600 text-white text-center shadow-xl hover:scale-105 transition">
+          <h3 class="text-2xl md:text-3xl font-semibold mb-4">Power BI / Tableau</h3>
+          <p class="text-lg md:text-xl">Proficiency: <strong>High</strong></p>
+        </div>
+        <div class="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-yellow-400 to-yellow-600 text-white text-center shadow-xl hover:scale-105 transition">
+          <h3 class="text-2xl md:text-3xl font-semibold mb-4">Data Ethics & Privacy</h3>
+          <p class="text-lg md:text-xl">Proficiency: <strong>High</strong></p>
+        </div>
+        <div class="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-blue-400 to-blue-600 text-white text-center shadow-xl hover:scale-105 transition">
+          <h3 class="text-2xl md:text-3xl font-semibold mb-4">Edge Computing & IoT</h3>
+          <p class="text-lg md:text-xl">Proficiency: <strong>Medium</strong></p>
+        </div>
+        <div class="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-green-400 to-green-600 text-white text-center shadow-xl hover:scale-105 transition">
+          <h3 class="text-2xl md:text-3xl font-semibold mb-4">Model Deployment</h3>
+          <p class="text-lg md:text-xl">Proficiency: <strong>Medium</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section id="hobbies" class="min-h-screen flex items-center justify-center bg-pink-50 px-4 py-12">
+    <div class="max-w-6xl w-full">
+      <h2 class="text-4xl md:text-5xl font-bold text-purple-700 mb-14 text-center">Hobbies & Interests</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-10">
+        <!-- Hobby Cards -->
+        <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 hover:shadow-3xl transform hover:scale-110 transition">
+          <img src="images/coding.avif" alt="Coding" class="mx-auto h-48 md:h-60 w-auto mb-6 object-contain">
+          <p class="text-xl md:text-2xl font-semibold text-purple-600 text-center">Coding</p>
+        </div>
+        <!-- Repeat for each hobby -->
+        <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 hover:shadow-3xl transform hover:scale-110 transition">
+          <img src="images/photo.jpg" alt="Photography" class="mx-auto h-48 md:h-60 w-auto mb-6 object-contain">
+          <p class="text-xl md:text-2xl font-semibold text-purple-600 text-center">Photography</p>
+        </div>
+        <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 hover:shadow-3xl transform hover:scale-110 transition">
+          <img src="images/travel.jpg" alt="Traveling" class="mx-auto h-48 md:h-60 w-auto mb-6 object-contain">
+          <p class="text-xl md:text-2xl font-semibold text-purple-600 text-center">Traveling</p>
+        </div>
+        <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 hover:shadow-3xl transform hover:scale-110 transition">
+          <img src="images/music.jpg" alt="Music" class="mx-auto h-48 md:h-60 w-auto mb-6 object-contain">
+          <p class="text-xl md:text-2xl font-semibold text-purple-600 text-center">Music</p>
+        </div>
+        <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 hover:shadow-3xl transform hover:scale-110 transition">
+          <img src="images/movie.png" alt="Binge Watching" class="mx-auto h-48 md:h-60 w-auto mb-6 object-contain">
+          <p class="text-xl md:text-2xl font-semibold text-purple-600 text-center">Binge-watching</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gradient-to-r from-pink-400 to-purple-500 text-white text-center py-6">
+  <p>&copy; 2025 Avantika Bhattacharya |
+    <a href="https://github.com/avanti-b" target="_blank" class="hover:text-yellow-300 transition-colors">GitHub</a> |
+    <a href="https://www.linkedin.com/in/avantika-bhattacharya-844773311/" target="_blank" class="hover:text-yellow-300 transition-colors">LinkedIn</a>
+  </p>
+</footer>
+
+</body>
+</html>
