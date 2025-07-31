@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataVerse - Data Science Courses</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen relative bg-gradient-to-br from-[#fff1e6] via-[#fde2c7] to-[#f5d7b2] text-[#3b3b3b]">
+
+  <!-- Navbar -->
+  <nav class="fixed top-5 left-1/2 transform -translate-x-1/2 bg-white/80 shadow-lg rounded-full px-10 py-4 flex flex-wrap justify-between items-center w-11/12 max-w-6xl z-50 backdrop-blur-md">
+    <div class="text-2xl font-bold text-[#b85c38]">⚡DataVerse</div>
+    <ul class="flex flex-nowrap justify-center gap-4 text-sm sm:text-base md:text-lg whitespace-nowrap">
+      <li><a href="#" class="hover:text-[#a0522d] transition">Home</a></li>
+      <li><a href="#" class="hover:text-[#a0522d] transition">Courses</a></li>
+      <li><a href="#" class="hover:text-[#a0522d] transition">AI Lab</a></li>
+      <li><a href="#" class="hover:text-[#a0522d] transition">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="pt-40 px-4">
+    <!-- Responsive Grid -->
+    <section class="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+
+      <!-- Course Card Template -->
+      <div class="bg-white border border-[#f5d7b2] rounded-3xl shadow-xl p-6 text-center transition transform hover:-translate-y-3">
+        <img src="images/DA_1.jpeg" alt="Data Analysis" class="w-full h-52 object-cover rounded-xl mb-6">
+        <h2 class="text-xl font-bold mb-2 text-[#b85c38]">📊 Data Analysis</h2>
+        <p class="mb-3">Master data cleaning, SQL, Python & visualization.</p>
+        <div class="text-lg font-semibold mb-3"><del class="text-red-500 mr-2">₹3999</del>₹2999 • 3 months</div>
+        <button class="bg-[#b85c38] text-white py-2 px-6 rounded-full font-bold hover:bg-[#a0522d] transition">Enroll Now</button>
+      </div>
+
+      <!-- Repeat for rest of cards -->
+      <div class="bg-white border border-[#f5d7b2] rounded-3xl shadow-xl p-6 text-center transition transform hover:-translate-y-3">
+        <img src="images/ML_2.png" alt="Machine Learning" class="w-full h-52 object-cover rounded-xl mb-6">
+        <h2 class="text-xl font-bold mb-2 text-[#b85c38]">🤖 Machine Learning</h2>
+        <p class="mb-3">Supervised & unsupervised learning models with scikit-learn.</p>
+        <div class="text-lg font-semibold mb-3"><del class="text-red-500 mr-2">₹4999</del>₹3999 • 4 months</div>
+        <button class="bg-[#b85c38] text-white py-2 px-6 rounded-full font-bold hover:bg-[#a0522d] transition">Enroll Now</button>
+      </div>
+
+      <div class="bg-white border border-[#f5d7b2] rounded-3xl shadow-xl p-6 text-center transition transform hover:-translate-y-3">
+        <img src="images/DL_3.png" alt="Deep Learning" class="w-full h-52 object-cover rounded-xl mb-6">
+        <h2 class="text-xl font-bold mb-2 text-[#b85c38]">🌐 Deep Learning</h2>
+        <p class="mb-3">Build neural networks with TensorFlow & PyTorch.</p>
+        <div class="text-lg font-semibold mb-3"><del class="text-red-500 mr-2">₹5999</del>₹4999 • 5 months</div>
+        <button class="bg-[#b85c38] text-white py-2 px-6 rounded-full font-bold hover:bg-[#a0522d] transition">Enroll Now</button>
+      </div>
+
+      <div class="bg-white border border-[#f5d7b2] rounded-3xl shadow-xl p-6 text-center transition transform hover:-translate-y-3">
+        <img src="images/CBD_4.jpg" alt="Cloud Computing" class="w-full h-52 object-cover rounded-xl mb-6">
+        <h2 class="text-xl font-bold mb-2 text-[#b85c38]">☁️ Cloud & Big Data</h2>
+        <p class="mb-3">Scale data pipelines with AWS, GCP & Spark.</p>
+        <div class="text-lg font-semibold mb-3"><del class="text-red-500 mr-2">₹4499</del>₹3499 • 4 months</div>
+        <button class="bg-[#b85c38] text-white py-2 px-6 rounded-full font-bold hover:bg-[#a0522d] transition">Enroll Now</button>
+      </div>
+
+      <div class="bg-white border border-[#f5d7b2] rounded-3xl shadow-xl p-6 text-center transition transform hover:-translate-y-3">
+        <img src="images/stats_5.jpg" alt="Statistics" class="w-full h-52 object-cover rounded-xl mb-6">
+        <h2 class="text-xl font-bold mb-2 text-[#b85c38]">📈 Statistics</h2>
+        <p class="mb-3">Master probability, distributions & hypothesis testing.</p>
+        <div class="text-lg font-semibold mb-3"><del class="text-red-500 mr-2">₹1999</del>₹1049 • 2 months</div>
+        <button class="bg-[#b85c38] text-white py-2 px-6 rounded-full font-bold hover:bg-[#a0522d] transition">Enroll Now</button>
+      </div>
+
+      <div class="bg-white border border-[#f5d7b2] rounded-3xl shadow-xl p-6 text-center transition transform hover:-translate-y-3">
+        <img src="images/AIE_6.avif" alt="AI Ethics" class="w-full h-52 object-cover rounded-xl mb-6">
+        <h2 class="text-xl font-bold mb-2 text-[#b85c38]">⚖️ AI Ethics</h2>
+        <p class="mb-3">Learn responsible AI development & ethical considerations.</p>
+        <div class="text-lg font-semibold mb-3"><del class="text-red-500 mr-2">₹1499</del>₹999 • 1 month</div>
+        <button class="bg-[#b85c38] text-white py-2 px-6 rounded-full font-bold hover:bg-[#a0522d] transition">Enroll Now</button>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg p-6 bg-[#b85c38] text-white mt-20">
+    &copy; 2025 Avantika Bhattacharya | 
+    <a href="https://github.com/avanti-b" target="_blank" class="hover:text-[#fde2c7] transition">GitHub</a> | 
+    <a href="https://www.linkedin.com/in/avantika-bhattacharya-844773311/" target="_blank" class="hover:text-[#fde2c7] transition">LinkedIn</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #0f0c29, #413998, #24243e);
+    background-size: 600% 600%;
+    animation: gradientAnimation 7s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    border-radius: 50px;
+    padding: 15px 40px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #64ffda;
+}
+/* Grid Layout */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    max-width: 1300px;
+    margin: 20px auto 100px;
+    padding: 80px 20px;
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    transition: transform 0.4s;
+}
+
+.course-card:hover {
+    transform: translateY(-20px);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.course-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-weight: bold;
+    color: #64ffda;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.price del {
+    color: #ff5e5e;
+    margin-right: 10px;
+}
+
+.card-btn {
+    background: #0f0c29;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background: #64ffda;
+    color: #0f0c29;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem 1rem;
+    background-color: #302b63;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover {
+    color: #64ffda;
+    transform: scale(1.1);
+}
+
+/* Responsive Navbar */
+@media (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        width: 90%;
+        border-radius: 30px;
+    }
+
+    .navbar .logo {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        margin: 8px 12px;
+    }
+
+    .navbar ul li a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1000px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+  .navbar ul li {
+        margin: 6px 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 0.8rem;
+    }
+}
+
+/* Handle landscape orientation on small devices */
+@media (max-width: 900px) and (orientation: landscape) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  .course-card {
+    padding: 15px;
+  }
+
+  .course-card img {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .course-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .course-card p {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .card-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+
+  .navbar ul li a {
+    font-size: 0.85rem;
+  }
+}
